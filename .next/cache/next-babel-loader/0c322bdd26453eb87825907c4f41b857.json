@@ -1,0 +1,1 @@
+{"ast":null,"code":"import \"../node_modules/bootstrap/dist/css/bootstrap.min.css\";","map":{"version":3,"sources":["C:/dev/NextJS/valorizacred_ssr/pages/_app.js"],"names":[],"mappings":"AAAA,OAAO,sDAAP","sourcesContent":["import \"../node_modules/bootstrap/dist/css/bootstrap.min.css\";\r\n"]},"metadata":{},"sourceType":"module"}
