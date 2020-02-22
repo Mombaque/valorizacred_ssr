@@ -7,8 +7,12 @@ const MainImage = () => {
   const deviceType = isTabletOrMobile ? "mobile" : "desktop";
 
   return (
-    <div class="image-div">
-      <img class="img-fluid" src={`/images/main_${deviceType}.png`} alt="" />
+    <div className="image-div">
+      <img
+        className="img-fluid"
+        src={`/images/main_${deviceType}.png`}
+        alt=""
+      />
     </div>
   );
 };

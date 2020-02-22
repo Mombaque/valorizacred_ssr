@@ -27,7 +27,7 @@ class NavBar extends Component {
 
   getButtons() {
     return (
-      <div class="btn-group" role="group" aria-label="Basic example">
+      <div className="btn-group" role="group" aria-label="Basic example">
         <NavBarButton
           title="WhatsApp (15) 99741-3771"
           onClick={this.props.onClickWhatsApp}
@@ -38,7 +38,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav class="navbar sticky-top bg-light justify-content-between">
+      <nav className="navbar sticky-top bg-light justify-content-between">
         {this.getLogo()}
         {this.getButtons()}
       </nav>
