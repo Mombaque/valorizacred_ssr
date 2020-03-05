@@ -28,7 +28,7 @@ class CardImageRow extends Component {
         <CardImage
           imagePath={this.getImage("casa.jpg")}
           alt="casa"
-          title={this.getImage("Empréstimo com garantia de imóvel")}
+          title="Empréstimo com garantia de imóvel"
           content="Quer investir, quitar dívidas, reorganizar a vida financeira? Podemos te ajudar. Seu imóvel quitado vale crédito. Com uma das melhores taxas de juros do mercado e até 15 anos para pagar."
         />
         <CardImage

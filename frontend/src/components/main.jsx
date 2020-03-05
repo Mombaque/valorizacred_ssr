@@ -3,9 +3,7 @@ import NavBar from "./navbar";
 import CardsImageRow from "./card-image-row";
 import MainImage from "./main-image";
 import Footer from "./footer";
-import { Helmet } from "react-helmet";
-import getConfig from "next/config";
-
+import ReactHelmetTags from "./react-helmet-tags";
 class Main extends Component {
   onClickWhatsApp = () => {
     window.open("https://wa.me/5515997413771", "_blank");
@@ -18,18 +16,7 @@ class Main extends Component {
     const infoSpanStyle = { fontSize: "30px", margin: "4px" };
     return (
       <div className="App">
-        <Helmet>
-          <title>
-            ValorizaCred - Empréstimo consignado, crédito com garantia e crédito
-            para empresas
-          </title>
-          <meta
-            name="description"
-            content="Empréstimo consignado para aposentados e pensionistas do INSS e servidores públicos. Empréstimo com garantia de imóvel e de veículos. Para sua empresa temos capital de giro."
-          />
-          <link rel="canonical" href="http://valorizacred.com" />
-        </Helmet>
-
+        <ReactHelmetTags />
         <NavBar onClickWhatsApp={this.onClickWhatsApp} />
 
         <span style={infoSpanStyle} className="badge badge-pill badge-dark">
@@ -47,7 +34,6 @@ class Main extends Component {
         </button>
 
         <MainImage />
-
         <Footer />
       </div>
     );
